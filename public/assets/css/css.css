@@ -1,0 +1,106 @@
+body
+{
+    font-family: Poppins;
+}
+
+.head
+{
+    font-weight: bold;
+    color: #BB1D33;
+}
+
+.card
+{
+    border: none;
+    display: grid;
+    grid-template-columns: 100% auto;
+    text-align: center;
+}
+
+.garis-nav
+{
+    height: 3px;
+    color: #BB1D33;
+    border-style: solid;
+    width: 100%;
+}
+
+.garis
+{
+
+    border-left: 1px #BB1D33 solid;
+    height: 85px !important;
+    width: 0px;
+    margin-top: -100px !important;
+    margin-left: 550px;
+}
+
+.box
+{
+    margin-top: -10px;
+    width: 50px;
+    height: 50px;
+    background: #bb1d33;
+    border-radius: 15px;
+    position: relative;
+    left: 47%;
+}
+
+.bi, .bi-plus-circle
+{
+    margin-left: 55px;
+    position: relative;
+    top: -70px;
+    color: black;
+}
+
+.rectangle
+{
+    position: absolute;
+    width: 996px;
+    height: 73px;
+    left: 185px;
+    top: 270px;
+    background: rgba(187, 29, 51, 0.1);
+    border-radius: 26px;
+}
+
+/* tr, th
+{
+    text-align: center;
+    font-size: 14px;
+} */
+
+li{
+    margin-left: 50px;
+}
+
+.btn-modal
+{
+    width: 100%;
+    /* background-color: #BB1D33; */
+}
+
+.icon
+{
+    position: absolute;
+    top: 42%;
+    margin-left: 310px;
+}
+
+.karir
+{
+    display: grid;
+    grid-template-columns: 55% auto;
+    text-align: center;
+    margin-left: 150px;
+}
+.footer
+{
+    margin-top: 100px;
+}
+
+.page-item
+{
+    margin-left: 0px;
+}
