@@ -15,7 +15,9 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">{{ auth()->user()->name }}</h5>
+                        <h5 class="card-title">{{ auth()->user()->name }}
+                            <a href="#"></a><i class="fa fa-edit text-danger ms-3 h5" data-bs-target="#edit-{{ auth()->user()->id }}" data-bs-toggle="modal"></i>
+                        </h5>
                         <p class="card-text">{{ auth()->user()->jabatan }}</p>
                         <p class="card-text"><small class="text-muted">{{ auth()->user()->nip }}</small></p>
                     </div>
