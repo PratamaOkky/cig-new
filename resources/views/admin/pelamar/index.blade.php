@@ -54,7 +54,7 @@
     </div>
     </div>
 
-    @push('page-scripts')
+    @push('scripts')
         <script>
             $(document).ready(function() {
                 $('#table_id').DataTable();

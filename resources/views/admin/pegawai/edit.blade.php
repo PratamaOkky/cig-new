@@ -35,6 +35,17 @@
                         </div>
 
                         <div class="mb-3">
+                            <label for="password" class="col-form-label">password</label>
+                            <input type="password" class="form-control @error('password') is-invalid @enderror" name="password"
+                                id="password" value="{{ old('password', $user->password) }}">
+                            <div class="invalid-feedback">
+                                @error('password')
+                                    {{ $message }}
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
                             <label for="nip" class="col-form-label">NIP</label>
                             <input type="text" class="form-control @error('nip') is-invalid @enderror" id="nip"
                                 name="nip" value="{{ old('nip', $user->nip) }}">

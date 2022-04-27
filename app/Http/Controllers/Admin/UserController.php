@@ -44,6 +44,7 @@ class UserController extends Controller
 
         $user = User::findOrFail($user->id)->update([
             'name' => request('name'),
+            'password' => request('password'),
             'nip' => request('nip'),
             'level_id' => request('level_id'),
             'nik' => request('nik'),

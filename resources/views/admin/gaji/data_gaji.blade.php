@@ -38,7 +38,7 @@
 
     @include('sweetalert::alert')
 
-    @push('page-scripts')
+    @push('scripts')
         <script>
             $.ajaxSetup({
                 headers: {
