@@ -20,7 +20,7 @@ class HomeController extends Controller
      {
         return view('homepage.blog.index', [
             'artikels' => Artikel::paginate(6),
-        compact('artikel')]);
+            compact('artikel')]);
      }
 
      public function detail(Artikel $artikel)
@@ -54,9 +54,9 @@ class HomeController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
-            'nama' => ['required', 'max:35', 'min:3', 'string'],
+            'name' => ['required', 'max:35', 'min:3', 'string'],
             'email' => ['required', 'email:dns'],
-            'posisi' => ['required', 'min:5', 'max:35', 'string'],
+            'posisi' => ['required', 'min:5', 'max:150', 'string'],
             'telpon' => ['required', 'min:5', 'numeric'],
             'cv' => ['required', 'file', 'max:2048']
         ]);
@@ -80,9 +80,9 @@ class HomeController extends Controller
     public function postKontak(Request $request)
     {
         $validate = $request->validate([
-            'nama' => ['required', 'string', 'min:3', 'max:32'],
+            'name' => ['required', 'string', 'min:3', 'max:55'],
             'email' => ['required', 'email:dns'],
-            'subject' => ['required', 'string', 'max:25'],
+            'subject' => ['required', 'string', 'max:55'],
             'isi' => ['required']
         ]);
 
