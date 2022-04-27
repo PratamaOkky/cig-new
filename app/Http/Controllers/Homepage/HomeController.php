@@ -57,7 +57,7 @@ class HomeController extends Controller
             'name' => ['required', 'max:35', 'min:3', 'string'],
             'email' => ['required', 'email:dns'],
             'posisi' => ['required', 'min:5', 'max:150', 'string'],
-            'telpon' => ['required', 'min:5', 'numeric'],
+            'nohp' => ['required', 'min:5', 'numeric'],
             'cv' => ['required', 'file', 'max:2048']
         ]);
 

@@ -11,10 +11,10 @@
                 <div class="modal-body">
                     @csrf
                     <div class="mb-3">
-                        <label for="nama" class="col-form-label">Nama</label>
-                        <input type="text" class="form-control @error('nama') is-invalid @enderror" name="nama" id="nama"
-                            placeholder="Input Nama" required autofocus value="{{ old('nama') }}">
-                        @error('nama')
+                        <label for="name" class="col-form-label">name</label>
+                        <input type="text" class="form-control @error('name') is-invalid @enderror" name="name" id="name"
+                            placeholder="Input name" required autofocus value="{{ old('name') }}">
+                        @error('name')
                             <div class="invalid-feedback">
                                 {{ $message }}
                             </div>
@@ -31,10 +31,10 @@
                         @enderror
                     </div>
                     <div class="mb-3">
-                        <label for="telpon" class="col-form-label">No. Hp</label>
-                        <input class="form-control @error('telpon') is-invalid @enderror" id="telpon" name="telpon"
-                            placeholder="Input No. Hp" value="{{ old('telpon') }}" required>
-                        @error('telpon')
+                        <label for="nohp" class="col-form-label">No. Hp</label>
+                        <input class="form-control @error('nohp') is-invalid @enderror" id="nohp" name="nohp"
+                            placeholder="Input No. Hp" value="{{ old('nohp') }}" required>
+                        @error('nohp')
                             <div class="invalid-feedback">
                                 <p class="text-danger">{{ $message }}</p>
                             </div>
