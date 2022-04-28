@@ -5,9 +5,10 @@
 @section('content')
 
     <style>
-        .page-item{
+        .page-item {
             margin: 0;
         }
+
     </style>
 
     <div class="container mb-5">
@@ -40,8 +41,7 @@
                 <div class="card mb-3" style="width: 100%; height: 110px; top: 60px; background: transparent">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="{{ asset('storage/' . $karir->image) }}" class="img-fluid d-inline mt-3" alt="P"
-                                width="70" height="70" style="margin-left: 29px">
+                            <img src="{{ asset('storage/' . $karir->image) }}" class="img-fluid d-inline mt-1" alt="P" width="70" height="60" style="margin-left: 29px">
                         </div>
                         <div class="col-md-8">
 
