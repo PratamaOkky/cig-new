@@ -30,6 +30,9 @@
                     kompetensi yang di perlukan<br>
                     bergabunglah Menjadi bagian dari kami
                 </p>
+                <p style="color:#BB1D33;font-size: 20px">
+                    *Tidak dipungut biaya apapun
+                </p>
             </div>
         </div>
 

@@ -29,7 +29,7 @@
             </div>
             <div class="col-10 col-lg-11" style="color:#BB1D33; padding-top: 75px;
                                 text-align: left; font-family: Poppins; font-weight: 700;font-size: 28px; width: 500px">
-                &ensp;Kata Pengantar Direktur
+                &ensp;Dewan Direksi
             </div>
         </div>
     </div>
@@ -52,7 +52,7 @@
             </div>
     </div>
     <!-- /kata pengantar -->
-    <div class="container">
+    {{-- <div class="container">
         <center>
             <div class="row" style="padding-top: 50px;">
                 <div class="col-1"></div>
@@ -62,12 +62,15 @@
                 </div>
                 <div class="col-1"></div>
             </div>
-    </div>
+    </div> --}}
 
     <!-- visi misi -->
-    <div class="container" style="padding-bottom: 50px;">
+    <div class="container" style="padding-bottom: 50px;padding-top: 100px">
+        <center><p style="font-family: 'Poppins';font-style: normal;font-weight: 700;font-size: 28px;line-height: 42px;color:#350106;">
+            Visi & Misi<br><span style="color:  #BB1D33;"> Garda Mitra Nasional</span></center>
+        <hr style="border: 3px solid #BB1D33;">
         <div class="row">
-            <div align="right" class="col-3" style="padding-top: 50px">
+            <div align="right" class="col-3">
                 <img src="{{ asset('assets/images/ic-misi.png') }}"
                     style="width: 61px; height: 74px; left: 246px; top: 1399px;">
             </div>
@@ -77,8 +80,15 @@
 
         </div>
         <div class="row">
-            <div class="col-8" align="left" style="font-size: 16px font-weight: 400;">
+            <div class="col-3">
+
+            </div>
+            <div class="col-7" align="left" style="font-size: 16px font-weight: 400;">
                 Menjadi perusahaan jasa pengamanan Nasional dan sebagai mitra strategis yang terpercaya
+            </div>
+
+            <div class="col-2">
+
             </div>
         </div>
 
@@ -108,10 +118,13 @@
             <div class="col-2">
             </div>
         </div>
+        <hr style="border: 3px solid #BB1D33;">
     </div>
 
     <!-- /visi misi -->
     <!-- 4 card pelayanan -->
+    <center><p style="font-family: 'Poppins';font-style: normal;font-weight: 700;font-size: 28px;line-height: 42px;color:#350106;">
+        Manfaat<span style="color:  #BB1D33;"> Kerja Sama Dengan Kami</span></center>
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-6 mb-3">

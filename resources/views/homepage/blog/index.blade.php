@@ -13,10 +13,10 @@
 
     <div class="section mx-3">
         <div class="section-body">
-            <div class="card mb-0" style="background-color: transparent">
-                <div class="container-fluid">
+            <div class="card mb-0" style="background-color: rgb(120, 51, 51)">
+                <div class="container" style="padding-top:200px">
                     <h3 class="text-center text-white pt-3">Artikel</h3>
-                    <hr style="width: 10%; border-top: 2px solid white;">
+
                     <div class="row">
                         @foreach ($artikels as $artikel)
                             <div class="col-12 col-md-3 col-lg-4">
@@ -31,7 +31,7 @@
                                         <div class="article-title" style="min-height: 6rem">
                                             <h2><a href="{{ route('detail', encrypt($artikel->id)) }}"
                                                     class="text-dark"
-                                                    style="text-decoration: none;">{{ \Illuminate\Support\str::limit($artikel->judul, 100, '...') }}</a>
+                                                    style="text-decoration: none;">{{ \Illuminate\Support\str::limit($artikel->judul, 30, '...') }}</a>
                                             </h2>
                                         </div>
                                         <div class="text-blockquote" style="min-height: 4rem">

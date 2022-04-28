@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <div class="container">
+    {{-- <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6"
                 style="color:#BB1D33; padding-top: 200px; text-align: left; font-family: Poppins; font-weight: 700;font-size: 35px; width: 394px">
@@ -23,9 +23,11 @@
                         style="width: width: 320px;height: 387px;left: 797px;top: 160px;">
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <div class="container" style="padding-top: 150px;">
+        <center><p style="font-family: 'Poppins';font-style: normal;font-weight: 700;font-size: 28px;line-height: 42px;color:#350106;">
+        Garda Mitra Nasional<span style="color:  #BB1D33;"> Melayani</span></center>
 
         <div class="cardla">
             <div class="card-body"><img src="{{ asset('assets/images/Vector.png') }}">

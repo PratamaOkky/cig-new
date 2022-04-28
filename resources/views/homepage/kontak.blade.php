@@ -14,7 +14,7 @@
                 <form action="{{ route('post') }}" method="POST">
                     @csrf
                     <label>Nama</label>
-                    <input type="text" style="width: 380px;height: 43px;" class="form-control" name="nama"
+                    <input type="text" style="width: 380px;height: 43px;" class="form-control" name="name"
                         value="{{ old('nama') }}">
                     <label>Email/Kontak</label>
                     <input type="text" style="width: 380px;height: 43px;" class="form-control" name="email"
