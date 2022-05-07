@@ -25,7 +25,7 @@
 
             @media (min-width: 992px) {
                 .block {
-                    width: 1196px;
+                
                     height: 73px;
                     margin-top: -75px;
                     background: rgba(187, 29, 51, 0.1);
@@ -92,7 +92,7 @@
             </div>
         </div>
 
-        <div class="block d-block ms-5"></div>
+        <div class="block d-block mb-5 ms-5"></div>
 
         @if ($artikels->count())
 

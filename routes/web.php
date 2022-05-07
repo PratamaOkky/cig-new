@@ -37,13 +37,14 @@ Route::middleware(['guest', 'PreventBackHistory'])->group( function ()
     // Karir
     Route::get('career', [HomeController::class, 'career'])->name('career');
     Route::post('career', [HomeController::class, 'store'])->name('career.store');
+    Route::get('show/{karir}', [HomeController::class, 'show'])->name('show');
 
     // Pesan
     Route::get('kontak', [HomeController::class, 'indexKontak'])->name('kontak');
     Route::post('post', [HomeController::class, 'postKontak'])->name('post');
 });
 
-
+ 
 Route::group(['middleware' => 'auth', 'PreventBackHistory'], function()
 {
     Route::group(['prefix' => 'admin', 'middleware' => 'admin', 'as' => 'admin.'], function()

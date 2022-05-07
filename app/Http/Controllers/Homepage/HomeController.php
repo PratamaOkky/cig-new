@@ -51,6 +51,12 @@ class HomeController extends Controller
         ]);
     }
 
+    public function show(Karir $karir)
+    {
+       $karir = Karir::findOrFail($karir->id);
+       $karirs = Karir::OrderBy('created_at', 'asc')->paginate(6);
+       return view('homepage.karir.show', compact('karir', 'karirs'));
+    }
     public function store(Request $request)
     {
         $validatedData = $request->validate([

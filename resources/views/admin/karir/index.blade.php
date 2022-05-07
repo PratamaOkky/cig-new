@@ -33,7 +33,7 @@
 
             @media (min-width: 992px) {
                 .block {
-                    width: 1196px;
+                  
                     height: 73px;
                     margin: -55px 0 15px;
                     background: rgba(187, 29, 51, 0.1);

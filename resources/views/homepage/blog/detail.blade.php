@@ -1,10 +1,12 @@
-@section('judul', 'Artikel')
+@section('title')
+{{ $art->judul }}
+@endsection
 
 @extends('layouts.homepage.template')
 
 @section('content')
 
-<div class="section pt-3">
+<!-- <div class="section pt-3">
     <div class="container-fluid px-5">
         <div class="section-header">
             <h1>Artikel</h1>
@@ -59,25 +61,46 @@
 
         </div>
     </div>
+</div> -->
+
+
+
+            <div class="section-header-breadcrumb" style="padding-top: 100px">
+            <div class="breadcrumb-item"><a href=" {{route('blog')}} " style="text-decoration: none"><span style="color: #BB1D33;">Artikel</span></a></div>
+            <div class="breadcrumb-item">{{\Illuminate\Support\str::limit($art->judul, 10)}}</div>
+            </div>
+<div class="container"style="padding-top: 100px">
+        <div class="row">
+            <div class="col-12 col-lg-9">
+            <div class="card">
+            <img src="{{asset('storage/' . $art->image)}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h2 class="card-title">{{$art->judul}}</h2>
+                <p class="card-text">{!!$art->isi!!}</p>
+            </div>
+        </div>
 </div>
+
+
+            <div class="col-12 col-lg-3" align="center">
+            @foreach ($artikels as $artikel)
+                    <div class="card">
+                        <article class="article article-style-b" style="box-shadow: none">
+                            <div class="article-header">
+                                <div class="article-image" data-background="{{asset('storage/'. $artikel->image)}}" style="background-image: url(&quot;{{asset('storage/'. $artikel->image)}}&quot;);">
+                                </div>
+                            </div>
+                            <div class="article-details text-dark">
+                                <div class="article-title">
+                                    <h2><a href=" {{route('detail', $artikel) }} " class="text-dark" style="text-decoration: none;">{{ $artikel->judul }}</a></h2>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    @endforeach
+            </div>
+        </div>
+    </div>
 
 @endsection
 
-@push('page-css')
-<style>
-    body {
-        background-image: url('../assets/img/unsplash/bg-1.jpg')
-    }
-
-    .img {
-        height: 200px;
-    }
-
-    @media (min-width: 992px) {
-    .img {
-        height: 500px;
-    }
-}
-
-</style>
-@endpush

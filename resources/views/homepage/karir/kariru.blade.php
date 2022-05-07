@@ -52,8 +52,8 @@
                                 <h5 class="card-title">{{ $karir->lowongan }}</h5>
                                 <p class="card-text">{{ $karir->posisi }}</p>
 
-                                <button type="submit" class="btn btn-secondary border-0 d-inline"
-                                    style="margin-left: 600px; margin-top: -65px">Lihat Detail</button>
+                                <a href="{{ route('show', $karir) }}" class="btn-red btn-danger">Baca Artikel</a>
+                                    
 
                                 <button type="submit" class="btn-red btn-danger border-0 d-inline" data-bs-target="#tambah"
                                     data-bs-toggle="modal"
@@ -89,9 +89,34 @@
         @endif
 
     </div>
+    {{-- Detail --}}
+    @foreach ($karirs as $karir)
+    <div class="modal fade" id="detail-{{$karir->id}}">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">{{$karir->posisi}}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="detail" class="col-form-label">Detail</label>
+                            <p>{{ $karir->detail }}</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    @endforeach
+    {{-- Detail --}}
+
+
 
     @include('homepage.karir._form_pelamar')
 
     @include('sweetalert::alert')
-
+ 
 @endsection

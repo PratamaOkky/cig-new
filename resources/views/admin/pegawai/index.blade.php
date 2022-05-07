@@ -35,8 +35,8 @@
                             <h1 class="card-title py-2">
                                 {{ $admin }}
                             </h1>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#tambah"><i
-                                    class="bi bi-plus-circle h6"></i></a>
+                            <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#tambah"><i
+                                    class="bi bi-plus-circle h6"></i></a> -->
                         </div>
                         <p class="card-text pt-2">Admin</p>
                     </div>

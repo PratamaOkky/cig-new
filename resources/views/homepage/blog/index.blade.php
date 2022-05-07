@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <style>
+    <!-- <style>
         .page-item {
             margin: 0;
         }
@@ -13,7 +13,7 @@
 
     <div class="section mx-3">
         <div class="section-body">
-            <div class="card mb-0" style="background-color: rgb(120, 51, 51)">
+            <div class="card mb-0">
                 <div class="container" style="padding-top:200px">
                     <h3 class="text-center text-white pt-3">Artikel</h3>
 
@@ -64,6 +64,60 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+
+
+<!-- tampilan 2 -->
+    <!-- <div class="container" style="padding-top:140px">
+        <div class="row">
+            @foreach ($artikels as $artikel)
+            <div class="col-md-4 col-sm-12 mt-4 col-lg-4">
+                <div class="card">
+                    <img src="{{ asset('assets/img/artikel/' . $artikel->image) }}" class="card-img-top" alt="gambar" >
+                    <div class="card-body">
+                        <h5 class="card-title">{{ $artikel->judul }}</h5>
+                        <a href="{{ route('detail', $artikel) }}" class="btn-red btn-danger">Baca Artikel</a>
+                    </div>
+                </div> 
+            </div>
+
+            @endforeach
+        </div>
+    </div>  -->
+<!-- end tampilan 2 -->
+
+
+
+
+
+<!-- tampilan 3 -->
+    <div class="container" style="padding-top:100px">
+        <div class="row">
+                    @foreach ($artikels as $artikel)
+                        <div class="col-md-4">
+                            <div class="card mt-5 border d-flex align-items-center">
+                                @if ($artikel->image)
+                                    <img src="{{ asset('storage/' . $artikel->image) }}" class="img-fluid mt-3">
+                                @else
+                                    <img src="{{ asset('assets/images/faces/1.jpg') }}" class="img-fluid mt-3"
+                                        alt="P">
+                                @endif
+
+                                <div class="card-body text-center">
+                                    <h5 class="card-text">{{ \Illuminate\Support\Str::limit($artikel->judul, 50) }}</h5>
+                                    <p class="card-text"><small
+                                            class="text-muted">{{ $artikel->created_at->diffForHumans() }}</small>
+                                    </p>
+
+                                    <a href="{{ route('detail', $artikel) }}" class="btn-red btn-danger">Baca Artikel</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+        </div>
     </div>
 
+<!-- end tampilan 3 -->
 @endsection
