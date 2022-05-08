@@ -12,7 +12,7 @@
     </style>
 
     <div class="container mb-5">
-        <div class="row">
+        <div class="row" style="padding-bottom:100px">
             <div class="col-12 col-lg-6" style="padding-top: 150px">
                 <img src="{{ asset('assets/images/karir.png') }}"
                     style="width: 436px;height: 424px;left: 155px;top: 164px;">
@@ -41,7 +41,7 @@
             {{-- Karir View --}}
 
             @foreach ($karirs as $karir)
-                <div class="card mb-3" style="width: 100%; height: 110px; top: 60px; background: transparent">
+                <!-- <div class="card mb-3" style="width: 100%; height: 110px; top: 60px; background: transparent">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="{{ asset('storage/' . $karir->image) }}" class="img-fluid d-inline mt-1" alt="P" width="70" height="60" style="margin-left: 29px">
@@ -52,17 +52,34 @@
                                 <h5 class="card-title">{{ $karir->lowongan }}</h5>
                                 <p class="card-text">{{ $karir->posisi }}</p>
 
-                                <a href="{{ route('show', $karir) }}" class="btn-red btn-danger">Baca Artikel</a>
-                                    
+                                <a href="{{ route('show', $karir) }}" class="btn-red btn-danger"style="margin-left: 600px; margin-top: -65px">Lihat Lowongan</a>
+                                <button type="submit" class="btn btn-secondary border-0 d-inline" data-bs-target="#detail-{{ $karir->id }}" data-bs-toggle="modal" style="margin-left: 600px; margin-top: -65px">Lihat Detail</button>
+                                <button type="submit" class="btn-red btn-danger border-0 d-inline" data-bs-target="#tambah" data-bs-toggle="modal" style="margin-left: 762px; margin-top: -65px; background-color: #BB1D33">Kirim CV</button>
 
-                                <button type="submit" class="btn-red btn-danger border-0 d-inline" data-bs-target="#tambah"
-                                    data-bs-toggle="modal"
-                                    style="margin-left: 762px; margin-top: -65px; background-color: #BB1D33">Kirim
-                                    CV</button>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
+
+                <div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-2">
+      <!-- <img src="..." class="img-fluid rounded-start" alt="..."> -->
+      <img src="{{ asset('storage/' . $karir->image) }}" class="img-fluid d-inline mt-1" alt="P" width="70" height="60" style="margin-left: 29px">                   
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5 class="card-title">{{ $karir->lowongan }}</h5>
+        <p class="card-text">{{ $karir->posisi }}</p>
+      </div>
+    </div>
+    <div class="col-md-4" style="padding-top :30px">
+        <a href="{{ route('show', $karir) }}" class="btn btn-secondary">Lihat Lowongan</a>
+        <button type="submit" class="btn-red btn-danger border-0 d-inline" data-bs-target="#tambah" data-bs-toggle="modal">Kirim CV</button>
+
+    </div>
+  </div>
+</div>
             @endforeach
             <div class="container mt-5  py-5 d-flex justify-content-center">
                 {{ $karirs->links() }}
