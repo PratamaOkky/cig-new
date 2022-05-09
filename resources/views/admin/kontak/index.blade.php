@@ -21,7 +21,7 @@
                                     </form>
                                     <p class="card-text">{{ $contact->name }}</p>
                                     <p class="card-text"><small>{{ \Illuminate\Support\Str::limit($contact->email, 10)}}</small></p>
-                                    <button class="btn btn-primary" data-bs-target="#edit-{{ $contact->id }}"
+                                    <button class="btn btn-danger" data-bs-target="#edit-{{ $contact->id }}"
                                         data-bs-toggle="modal">Lihat Detail</button>
                                 </div>
                             </div>

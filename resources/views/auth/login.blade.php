@@ -25,7 +25,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <div class="card border-0 d-flex align-items-center mt-5 py-5">
                     <div class="card-content" id="card-login">
                         <div class="card-body mt-5">
@@ -38,7 +38,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <div class="card border-0 d-flex align-items-center mt-5 py-5">
                     <div class="card-content mb-5" id="card-login">
                         <div class="card-body mt-5">

@@ -33,7 +33,8 @@
 
             @media (min-width: 992px) {
                 .block {
-                  
+
+                    width: 1196px;
                     height: 73px;
                     margin: -55px 0 15px;
                     background: rgba(187, 29, 51, 0.1);
@@ -116,7 +117,7 @@
             </div>
         </div>
 
-        <div class="garis"></div>
+        <div class="garis"style="margin-left:630px"></div>
 
         <div class="block d-block ms-5"></div>
 

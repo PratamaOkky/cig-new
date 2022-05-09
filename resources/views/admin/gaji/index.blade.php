@@ -7,9 +7,7 @@
                     <div class="card-content">
                         <div class="card-body">
                             <h1 class="welcome mb-4 mt-5">Upload Gaji</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio officia enim modi placeat.
-                                Quibusdam repellat nam ipsa velit qui. Animi asperiores ea ex quisquam dolorum
-                                recusandae laudantium sunt mollitia iure.</p>
+                            <p>Halaman ini untuk upload slip gaji karyawan. Data file yang diupload harus file Excel (.csv)</p>
                             <button type="button" class="btn btn-danger border-0 btn-md ml-auto mt-3"
                                 data-bs-toggle="modal" data-bs-target="#uploadFile">Upload File <i
                                     class="fa fa-cloud-upload"></i></button>
