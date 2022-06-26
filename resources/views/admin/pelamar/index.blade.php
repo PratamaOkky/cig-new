@@ -29,7 +29,7 @@
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $pelamar->name }}</td>
                             <td>{{ $pelamar->email }}</td>
-                            <td>{{ $pelamar->telpon }}</td>
+                            <td>{{ $pelamar->nohp }}</td>
                             <td>{{ $pelamar->posisi }}</td>
                             <td>
                                 <a href="{{ asset('storage/' . $pelamar->cv) }}">{{ $pelamar->name . '.pdf' }}</a>

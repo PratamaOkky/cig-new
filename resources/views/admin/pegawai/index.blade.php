@@ -44,7 +44,7 @@
             </div>
         </div>
 
-        <div class="garis"></div>
+        <div class="garis" style="margin-left: 630px"></div>
         <div class="rectangle d-block mb-5 ms-5"></div>
     </div>
 
